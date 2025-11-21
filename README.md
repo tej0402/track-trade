@@ -7,6 +7,14 @@
 
 ---
 
+## Demo
+
+[![TrackTrade Demo](https://img.youtube.com/vi/ETCNDsrmTmo/0.jpg)](https://www.youtube.com/watch?v=ETCNDsrmTmo)
+
+*Click the image above to watch the demo video.*
+
+---
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
