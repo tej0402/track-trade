@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TrackTrade
 
-## Getting Started
+**TrackTrade** is a premium trading journal application designed to help traders track their performance, analyze their trades, and master the markets.
 
-First, run the development server:
+🌐 **Website**: [https://www.tracktrade.in](https://www.tracktrade.in)  
+📧 **Contact**: [contacttracktrade@gmail.com](mailto:contacttracktrade@gmail.com)
+
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+1.  **Node.js**: Version 18.17 or later. [Download Node.js](https://nodejs.org/)
+2.  **Git**: For version control. [Download Git](https://git-scm.com/)
+3.  **Package Manager**: `npm` (comes with Node.js), `yarn`, or `pnpm`.
+
+---
+
+## Installation & Setup
+
+Follow these steps to copy and run the application on **Windows**, **macOS**, or **Linux**.
+
+### 1. Clone the Repository
+Open your terminal (Command Prompt, PowerShell, or Terminal) and run:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/track-trade.git
+cd track-trade
+```
+*(Replace `YOUR_USERNAME` with your actual GitHub username if you have forked or created your own repo)*
+
+### 2. Install Dependencies
+Install the necessary packages using npm:
+
+```bash
+npm install
+```
+
+### 3. Run the Development Server
+Start the application locally:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Access the App
+Open your browser and navigate to:
+[http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
+- **Multi-User Support**: Secure login and registration for multiple users on the same device.
+- **Dashboard**: Visual analytics of your trading performance.
+- **Journal**: Detailed trade logging with notes and tags.
+- **Settings**: Customizable account settings and preferences.
+- **Dark Mode**: Sleek, eye-friendly UI.
 
-## Learn More
+## Tech Stack
+- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/)
+- **Charts**: [Recharts](https://recharts.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2024 TrackTrade. All rights reserved.
