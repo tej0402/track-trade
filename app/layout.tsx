@@ -7,6 +7,7 @@ import { TradeProvider } from "@/context/TradeContext"
 import { SettingsProvider } from "@/context/SettingsContext"
 import { AuthProvider } from "@/context/AuthContext"
 import { AuthWrapper } from "@/components/layout/AuthWrapper"
+import { Footer } from "@/components/layout/Footer"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
               <AuthWrapper>
                 {children}
               </AuthWrapper>
+              <Footer />
             </TradeProvider>
           </SettingsProvider>
         </AuthProvider>
