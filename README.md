@@ -52,6 +52,9 @@ Start the application locally:
 npm run dev
 ```
 
+**To Stop the Server:**
+Press `Ctrl + C` in your terminal and type `y` (if prompted) to confirm.
+
 ### 4. Access the App
 Open your browser and navigate to:
 [http://localhost:3000](http://localhost:3000)
