@@ -5,12 +5,16 @@ export function middleware(req: NextRequest) {
     const basicAuth = req.headers.get('authorization')
     const url = req.nextUrl
 
+    let user = 'undefined'
+    let pwd = 'undefined'
+    let validUser = process.env.AUTH_USER
+    let validPass = process.env.AUTH_PASS
+
     if (basicAuth) {
         const authValue = basicAuth.split(' ')[1]
-        const [user, pwd] = atob(authValue).split(':')
-
-        const validUser = process.env.AUTH_USER
-        const validPass = process.env.AUTH_PASS
+        const [u, p] = atob(authValue).split(':')
+        user = u
+        pwd = p
 
         if (user === validUser && pwd === validPass) {
             return NextResponse.next()
@@ -19,7 +23,7 @@ export function middleware(req: NextRequest) {
 
     url.pathname = '/api/auth'
 
-    return new NextResponse('Auth Required', {
+    return new NextResponse(`Auth Required. \nDebug Info:\nEnv User: '${validUser}'\nEnv Pass: '${validPass ? '***' : 'undefined'}' (Length: ${validPass?.length})\nReceived User: '${user}'\nReceived Pass: '${pwd}'`, {
         status: 401,
         headers: {
             'WWW-Authenticate': 'Basic realm="Secure Area"',
