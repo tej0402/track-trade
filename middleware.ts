@@ -23,7 +23,7 @@ export function middleware(req: NextRequest) {
 
     url.pathname = '/api/auth'
 
-    return new NextResponse(`Auth Required. \nDebug Info:\nEnv User: '${validUser}'\nEnv Pass: '${validPass ? '***' : 'undefined'}' (Length: ${validPass?.length})\nReceived User: '${user}'\nReceived Pass: '${pwd}'`, {
+    return new NextResponse('Auth Required.', {
         status: 401,
         headers: {
             'WWW-Authenticate': 'Basic realm="Secure Area"',
